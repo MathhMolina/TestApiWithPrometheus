@@ -13,3 +13,8 @@ scrape_configs:
   - targets:
     - testapi:8080
 
+- job_name: grafana
+  static_configs: 
+  - targets:
+    - grafana:3000
+

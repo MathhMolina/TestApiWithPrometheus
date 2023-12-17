@@ -15,3 +15,6 @@ services:
     image: grafana/grafana-enterprise
     ports:
       - 3000:3000
+    volumes:
+      - ./grafana:/var/lib/grafana
+      - ./grafana/dashboards:/var/lib/grafana/dashboards
